@@ -33,8 +33,8 @@ export class Ops360AdminApiCftPipelineStack extends Stack {
 
     const GitHubAction = new BitBucketSourceAction({
       actionName: 'Checkout',
-      owner: 'genpactops360',
-      repo: 'ops360-admin-api',
+      owner: 'tushar-en-sharma',
+      repo: 'pipel_test',
       branch: GIT_BRANCH,
       connectionArn: gitHubConnectionArn,
       output: repoSourceArtifact,
