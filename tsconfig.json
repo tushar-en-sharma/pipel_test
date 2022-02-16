@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "baseUrl": ".",
+    "target":"ES2018",
     "module": "commonjs",
-    "lib": [
-      "es2018"
-    ],
+    "lib": ["es2018"],
     "declaration": true,
     "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
     "noImplicitThis": true,
@@ -18,13 +19,12 @@
     "inlineSourceMap": true,
     "inlineSources": true,
     "experimentalDecorators": true,
-    "strictPropertyInitialization": false,
-    "typeRoots": [
-      "./node_modules/@types"
-    ]
+    "strictPropertyInitialization":false,
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@/*": ["*"]
+    }
   },
-  "exclude": [
-    "node_modules",
-    "cdk.out"
-  ]
+  
+  "exclude": ["cdk.out"]
 }
