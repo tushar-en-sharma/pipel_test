@@ -35,8 +35,8 @@ export class CdkCorePipelineStack extends Stack {
       // Where the source can be found
       sourceAction: new BitBucketSourceAction({
         actionName: 'Checkout',
-        owner: 'genpactops360',
-        repo: 'pipelines.ops360',
+        owner: 'tushar-en-sharma',
+        repo: 'pipel_test',
         branch: GIT_BRANCH,
         connectionArn: gitHubConnectionArn,
         output: repoSourceArtifact,
